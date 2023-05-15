@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Recursive:CRSV@1&display=swap');
+
+body {
+  background-color: #0f1217;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation Bar */
+.writing {
+  font-size: 1.5em;
+  line-height: 2em;
+  display: inline-block;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.nav-bar {
+  display: inline-block;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar li {
+  display: inline-block;
+  text-decoration: none;
+  /* float: right; */
+}
+
+.nav-bar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+
+.nav-bar .menu-link {
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+/* Center header */
+.center-header{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-header img {
+  padding-left: 2em;
+  width: 12%;
+}
+
+.center-header h1 {
+  font-family: 'Recursive';
+  font-weight: 400;
+  font-size: 3em;
+  font-style: italic;
+  color: #FF7575;
+}
+
+.center-header p {
+  font-family: 'Popins', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
