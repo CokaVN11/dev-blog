@@ -95,10 +95,11 @@ header {
 }
 
 .body-wrapper {
-  border-top: 0.1em solid #4D4D4D;
-  border-bottom: 0.1em solid #4D4D4D;
+  border-top: 0.1em solid rgba(77, 77, 77, 0.2);
+  border-bottom: 0.1em solid rgba(77, 77, 77, 0.2);
   padding-top: 1em;
   padding-bottom: 1em;
+
 }
 
 /* Category navigation bar */
