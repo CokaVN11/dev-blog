@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Recursive:CRSV@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Recursive:CRSV@1&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  padding: 1.5rem;
+  background-color: #0f1217;
+}
 
 body {
-  background-color: #0f1217;
   color: white;
   margin: 0;
 }
@@ -13,9 +22,9 @@ a {
 }
 
 header {
-  margin: 5em;
-  padding-left: 5em;
-  padding-right: 5em;
+  margin: 5vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
 
 /* Navigation Bar */
@@ -69,7 +78,7 @@ header {
 }
 
 /* Center header */
-.center-header{
+.center-header {
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -77,19 +86,19 @@ header {
 
 .center-header img {
   padding-left: 2em;
-  width: 12%;
+  width: 12vh;
 }
 
 .center-header h1 {
-  font-family: 'Recursive';
+  font-family: "Recursive";
   font-weight: 400;
   font-size: 3em;
   font-style: italic;
-  color: #FF7575;
+  color: #ff7575;
 }
 
 .center-header p {
-  font-family: 'Popins', sans-serif;
+  font-family: "Popins", sans-serif;
   font-weight: 400;
   font-size: 1.3em;
 }
@@ -99,21 +108,34 @@ header {
   border-bottom: 0.1em solid rgba(77, 77, 77, 0.2);
   padding-top: 1em;
   padding-bottom: 1em;
-
 }
 
 /* Category navigation bar */
-.nav-category {
+
+.nav-category-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.nav-category {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 10em;
   padding-right: 10em;
-  font-family: "Recursive", sans-serif;
-  font-style: italic;
+  overflow: hidden;
+  height: 2.5rem;
+  z-index: 2;
+  scroll-behavior: smooth;
+  margin: auto;
+  white-space: nowrap;
   position: relative;
+}
+
+.button-wrapper {
+  display: inline-block;
 }
 
 .category-button {
@@ -127,4 +149,21 @@ header {
 
 .nav-category a {
   color: #909090;
+  display: block;
+  padding: 0 36px 0 36px;
+  font-family: "Recursive", sans-serif;
+  font-style: italic;
+}
+.nav-category ul {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-block: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  right: -17px;
+  overflow-x: scroll;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
 }
